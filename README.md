@@ -1,3 +1,3 @@
 # tut06b_showData_React
 
-### moved to rebuild to this repo!
+### moved the rebuild to this repo!
