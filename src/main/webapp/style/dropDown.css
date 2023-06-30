@@ -15,7 +15,7 @@
 */
 
 .dropDown {
-  /* .dropDown is a parent of dropConent. Since we want to right justify dropConent with its parent,
+  /* .dropDown is a parent of dropContent. Since we want to right justify dropConent with its parent,
     assign "position relative" to the parent (.dropDown) and "position absolute" to the child (.dropContent).      */
   position: relative;
   /* "display:inline-block" makes divs are positioned/treated like words instead of like block/paragraph elements */
@@ -29,7 +29,7 @@
 }
 
 .dropDown .dropContent a {
-  color: white;
+  color: black;
   font-size: 0.75rem;
 }
 
@@ -41,7 +41,7 @@
 
   background-color: gold;
   border-radius: 0.25rem;
-  box-shadow: 0.25rem 0.25rem 0.5rem lightblue;
+  box-shadow: 0.25rem 0.25rem 0.5rem red;
   /* position absolute aligns with its 1st non static parent (.dropDown)  */
   position: absolute;
   z-index: 3; /* higher z-index places the element on top, not underneath */
