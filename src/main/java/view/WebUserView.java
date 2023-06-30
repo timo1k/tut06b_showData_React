@@ -22,7 +22,7 @@ public class WebUserView {
         StringData sd = new StringData();
         
         try {
-            String sql = "SELECT web_user_id, user_email, user_password, user_image, membership_fee, birthday, "
+            String sql = "SELECT web_user_id, user_email, user_password, image, membership_fee, birthday, "
                     + "web_user.user_role_id, user_role_type "
                     + "FROM web_user, user_role where web_user.user_role_id = user_role.user_role_id "
                     + "ORDER BY web_user_id ";  // always order by something, not just random order.
@@ -42,7 +42,7 @@ public class WebUserView {
                 sd.webUserId = Format.fmtInteger(results.getObject("web_user_id"));
                 sd.userEmail = Format.fmtString(results.getObject("user_email"));
                 sd.userPassword = Format.fmtString(results.getObject("user_password"));
-                sd.userImage = Format.fmtString(results.getObject("user_image"));
+                sd.userImage = Format.fmtString(results.getObject("image"));
                 sd.birthday = Format.fmtDate(results.getObject("birthday"));
                 sd.membershipFee = Format.fmtDollar(results.getObject("membership_fee"));
                 sd.userRoleId = Format.fmtInteger(results.getObject("web_user.user_role_id"));
