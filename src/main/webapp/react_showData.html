@@ -15,6 +15,10 @@
 
     <link href="style/container.css" rel="stylesheet" type="text/css" />
 
+    <link href="style/posts.css" rel="stylesheet" type="text/css" />
+
+    <link href="style/ajaxUserTable.css" rel="stylesheet" type="text/css" />
+
     <link rel="shortcut icon" href="icons/favicon.ico" />
 
     <!-- Reference the React CDNs (Content Delivery Networks, basically just a hosted web resource) -->
@@ -48,6 +52,9 @@
     <script type="text/babel" src="js/React/UserFilterTable.js"></script>
     <script type="text/babel" src="js/React/Blog.js"></script>
     <script type="text/babel" src="js/React/Container.js"></script>
+    <script type="text/babel" src="js/React/Posts.js"></script>
+    <script type="text/babel" src="js/React/AjaxAnimeTable.js"></script>
+    <script type="text/babel" src="js/React/AnimeFilterTable.js"></script>
 
     <script type="text/babel">
       //  "use strict";
@@ -71,7 +78,7 @@
               </Link>
             </div>
             <div id="nav">
-              <div class="dropDown">
+              <div className="dropDown">
                 <Link
                   style={{ color: "white", textDecoration: "none" }}
                   to="/feed"
@@ -79,7 +86,7 @@
                   Feed
                 </Link>
               </div>
-              <div class="dropDown">
+              <div className="dropDown">
                 <Link
                   style={{ color: "white", textDecoration: "none" }}
                   to="/blog"
@@ -95,7 +102,10 @@
                   alt="Account"
                 />
                 <div className="dropContent">
-                  <Link style={{ color: "black" }} to="/userInsert">
+                  <Link
+                    style={{ color: "black", textDecoration: "underline" }}
+                    to="/userInsert"
+                  >
                     Register
                   </Link>
                   <br />
@@ -109,10 +119,19 @@
                   alt="Search"
                 />
                 <div className="dropContent">
-                  <Link style={{ color: "black" }} to="/users">
+                  <Link
+                    style={{ color: "black", textDecoration: "underline" }}
+                    to="/users"
+                  >
                     Users
                   </Link>
                   <br />
+                  <Link
+                    style={{ color: "black", textDecoration: "underline" }}
+                    to="/anime"
+                  >
+                    AnimePosts
+                  </Link>
                 </div>
               </div>
             </div>
@@ -122,6 +141,7 @@
             <Route path="/" exact component={Home} />
             <Route path="/userInsert" component={UserInsertComingSoon} />
             <Route path="/users" component={AjaxUserTable} />
+            <Route path="/anime" component={AjaxAnimeTable} />
             <Route path="/feed" component={Container} />
             <Route path="/blog" component={Blog} />
           </div>
