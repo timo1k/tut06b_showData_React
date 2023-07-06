@@ -10,6 +10,7 @@ function Blog() {
         SEMI-COMPLETED
       </li>
       <li>create insert user login interface page </li>
+      <li>work on backend</li>
     </div>
   );
 }
