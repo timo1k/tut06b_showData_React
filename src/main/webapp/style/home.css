@@ -10,3 +10,15 @@
 .home li {
   color: white;
 }
+
+.home .header {
+  height: 350px;
+}
+
+.home .header2 {
+  height: 700px;
+}
+
+.home .header3 {
+  height: 1000px;
+}

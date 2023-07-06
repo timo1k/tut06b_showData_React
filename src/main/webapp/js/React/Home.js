@@ -4,7 +4,7 @@ function Home() {
       <h3>Welcome to myAnimeArchive!</h3>
 
       <img src="https://media3.giphy.com/media/WmkEhAIyWfpm1vdVcg/giphy.gif"></img>
-      <div>
+      <div className="header">
         <h3>Unleash Your Anime Passion</h3>
         <p>
           Sign Up For Free @ <a href="">here</a>
@@ -12,7 +12,7 @@ function Home() {
       </div>
       <h3>Capture, Share, and Connect</h3>
 
-      <div>
+      <div className="header2">
         <li>
           Anime Blogging: Express your thoughts, reviews, and insights about
           anime through personalized blog posts.
@@ -27,9 +27,8 @@ function Home() {
         </li>
       </div>
 
-      <h3>Featured Anime Blog Posts</h3>
-      <div>
-        <div></div>
+      <div className="header3">
+        <h3>Featured Anime Blog Posts</h3>
       </div>
     </div>
   );
