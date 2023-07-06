@@ -1,0 +1,18 @@
+.container .left {
+  float: left;
+  background: Red;
+  width: 15%;
+  height: 50px;
+}
+.container .center {
+  float: left;
+  background: Green;
+  width: 65%;
+  height: 10000px;
+}
+.container .right {
+  float: right;
+  background: blue;
+  width: 20%;
+  height: 280px;
+}
