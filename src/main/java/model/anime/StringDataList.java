@@ -8,7 +8,7 @@ import java.util.ArrayList;
 public class StringDataList {
 
     public String dbError = "";
-    public ArrayList<StringData> animeList = new ArrayList<>();
+    public ArrayList<StringData> animeList = new ArrayList<StringData>();
 
     // Default constructor leaves StringDataList objects nicely set with properties 
     // indicating no database error and 0 elements in the list.

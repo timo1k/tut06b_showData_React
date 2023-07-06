@@ -19,10 +19,10 @@ public class StringData {
     public StringData() {
     }
     
-    public int getCharacterCount() {
-        String s = this.animeId + this.animeName + this.animeJapaneseName + this.animeImg + this.watchDate
-                + this.animeRating + this.animeDesc + this.webUserId + this.userEmail;
-        return s.length();
-    }
+    // public int getCharacterCount() {
+    //     String s = this.animeId + this.animeName + this.animeJapaneseName + this.animeImg + this.watchDate
+    //             + this.animeRating + this.animeDesc + this.webUserId + this.userEmail;
+    //     return s.length();
+    // }
 
 }
