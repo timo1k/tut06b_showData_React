@@ -11,6 +11,8 @@ function Blog() {
       </li>
       <li>create insert user login interface page </li>
       <li>work on backend</li>
+      <li>/* create a component that creates a list of Posts */</li>
+      <li>fix posts css</li>
     </div>
   );
 }
