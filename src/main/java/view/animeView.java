@@ -39,7 +39,7 @@ public class animeView {
                 sd.animeId = Format.fmtInteger(results.getObject("anime_id"));
                 sd.animeJapaneseName = Format.fmtString(results.getObject("anime_japanese_name"));
                 sd.animeImg = Format.fmtString(results.getObject("anime_img"));
-                sd.watchDate = Format.fmtString(results.getObject("watch_date"));
+                sd.watchDate = Format.fmtDate(results.getObject("watch_date"));
                 sd.animeRating = Format.fmtInteger(results.getObject("anime_rating"));
                 sd.animeDesc = Format.fmtString(results.getObject("anime_desc"));
                 sd.webUserId = Format.fmtInteger(results.getObject("web_user_id"));
