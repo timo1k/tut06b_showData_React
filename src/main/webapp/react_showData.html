@@ -13,6 +13,8 @@
 
     <link href="style/home.css" rel="stylesheet" type="text/css" />
 
+    <link href="style/container.css" rel="stylesheet" type="text/css" />
+
     <link rel="shortcut icon" href="icons/favicon.ico" />
 
     <!-- Reference the React CDNs (Content Delivery Networks, basically just a hosted web resource) -->
@@ -45,6 +47,7 @@
     <script type="text/babel" src="js/React/AjaxUserTable.js"></script>
     <script type="text/babel" src="js/React/UserFilterTable.js"></script>
     <script type="text/babel" src="js/React/Blog.js"></script>
+    <script type="text/babel" src="js/React/Container.js"></script>
 
     <script type="text/babel">
       //  "use strict";
@@ -119,7 +122,7 @@
             <Route path="/" exact component={Home} />
             <Route path="/userInsert" component={UserInsertComingSoon} />
             <Route path="/users" component={AjaxUserTable} />
-            <Route path="/feed" component={Home} />
+            <Route path="/feed" component={Container} />
             <Route path="/blog" component={Blog} />
           </div>
 
