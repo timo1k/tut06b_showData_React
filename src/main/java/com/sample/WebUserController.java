@@ -31,6 +31,21 @@ public class WebUserController {
         return Json.toJson(list); // convert sdl obj to JSON Format and return that.
     }
 
+    @RequestMapping(value = "/webUser/getById", params = {"userId" }, produces = "application/json")
+    public String getById(@RequestParam("userId") String userId) {
+        StringData sd = new StringData();
+        if (userId == null) {
+            sd.errorMsg = "Error: URL must be /webUser/getById?userId=xx " +
+                    "where xx is the web_user_id of the desired web_user record.";
+        } else {
+            DbConn dbc = new DbConn();
+            sd = DbMods.getById(dbc, userId);
+            dbc.close(); // EVERY code path that opens a db connection must close it
+            // (or else you have a database connection leak).
+        }
+        return Json.toJson(sd);
+    }
+
     @RequestMapping(value = "/webUser/insert", params = { "jsonData" }, produces = "application/json")
     public String insert(@RequestParam("jsonData") String jsonInsertData) {
 
