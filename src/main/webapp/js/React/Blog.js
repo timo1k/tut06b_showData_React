@@ -13,6 +13,11 @@ function Blog() {
       <li>work on backend</li>
       <li>/* create a component that creates a list of Posts */</li>
       <li>fix posts css</li>
+      <li>seperate tables (user and anime) css</li>
+      <li>
+        update anime find by id endpoint to have better error messages and
+        create findbyid component for anime
+      </li>
     </div>
   );
 }
