@@ -19,6 +19,8 @@
 
     <link href="style/ajaxUserTable.css" rel="stylesheet" type="text/css" />
 
+    <link href="style/find.css" rel="stylesheet" type="text/css" />
+
     <link rel="shortcut icon" href="icons/favicon.ico" />
 
     <!-- Reference the React CDNs (Content Delivery Networks, basically just a hosted web resource) -->
@@ -43,7 +45,10 @@
     <div id="root"></div>
 
     <script src="js/reusable/ajax_alt.js"></script>
+    <script src="js/reusable/ajax.js"></script>
     <script src="js/reusable/dropDownFW.js"></script>
+    <script src="js/Javascript/find.js"></script>
+
     <script type="text/babel" src="js/reusable/filterObjList.js"></script>
 
     <script type="text/babel" src="js/React/Home.js"></script>
@@ -55,6 +60,7 @@
     <script type="text/babel" src="js/React/Posts.js"></script>
     <script type="text/babel" src="js/React/AjaxAnimeTable.js"></script>
     <script type="text/babel" src="js/React/AnimeFilterTable.js"></script>
+    <script type="text/babel" src="js/React/FindUserObj.js"></script>
 
     <script type="text/babel">
       //  "use strict";
@@ -130,7 +136,14 @@
                     style={{ color: "black", textDecoration: "underline" }}
                     to="/anime"
                   >
-                    AnimePosts
+                    Anime Posts
+                  </Link>
+                  <br />
+                  <Link
+                    style={{ color: "black", textDecoration: "underline" }}
+                    to="/findUser"
+                  >
+                    Find User
                   </Link>
                 </div>
               </div>
@@ -144,6 +157,7 @@
             <Route path="/anime" component={AjaxAnimeTable} />
             <Route path="/feed" component={Container} />
             <Route path="/blog" component={Blog} />
+            <Route path="/findUser" component={FindUserObj} />
           </div>
 
           <div id="footer">t1m0</div>
