@@ -1,5 +1,7 @@
 .posts {
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
 .posts img {
   height: 280px;
@@ -7,4 +9,6 @@
 }
 
 .posts .inner {
+  border: 30px solid black;
+  display: inline-block;
 }
