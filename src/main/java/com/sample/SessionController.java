@@ -63,7 +63,7 @@ public class SessionController {
 
 
     @RequestMapping(value = "/session/loginSession", params = {"userEmail", "userPass" }, produces = "application/json")
-    public String loginSession(HttpServletRequest request, @RequestParam("userEmail") String userEmail, @RequestParam("userPassword") String userPass) {
+    public String loginSession(HttpServletRequest request, @RequestParam("userEmail") String userEmail, @RequestParam("userPass") String userPass) {
       HttpSession session = request.getSession();
         StringData sd = new StringData();
 
@@ -79,6 +79,7 @@ public class SessionController {
               
               if ((sd != null) && (sd.webUserId != "")) {
                   session.setAttribute("loggedOnUser", sd); // write object to JSP session object
+                  sd.errorMsg = "Above data was written to the session";
               }
               else{
                   sd = new StringData();
@@ -89,7 +90,6 @@ public class SessionController {
           }
           dbc.close();
       }
-        sd.errorMsg = "Above data was written to the session";
 
         return Json.toJson(sd);
     }
